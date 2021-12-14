@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+</head>
+<body>
+    <div>
+        <input class="name" placeholder="name">
+        <input class="age" placeholder="age">
+    </div>
+    <button onclick="onClick()"></button>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyDQrpRXmiqnl5hKPVoKDuOD2cbK6Ai5qtw",
+        authDomain: "setgel-908fb.firebaseapp.com",
+        projectId: "setgel-908fb",
+        storageBucket: "setgel-908fb.appspot.com",
+        messagingSenderId: "82092751823",
+        appId: "1:82092751823:web:185235b2dfec02553ef0ba",
+        measurementId: "G-11E4L4YXXT"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
