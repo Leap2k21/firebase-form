@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Firestore</title>
+</head>
+
+<body>
+    <input type="text" name="" id="name" placeholder="name">
+    <input type="number" name="" id="age" placeholder="age">
+    <select id="gender">
+        <option value="false">male</option>
+        <option value="true">female</option>
+    </select>
+    <button onclick="btn()">Add</button>
+
+    <div class="container">
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBptFoESLkR8Q6b-SmV0AyoCqLf577eq-U",
+            authDomain: "firestore-6748d.firebaseapp.com",
+            projectId: "firestore-6748d",
+            storageBucket: "firestore-6748d.appspot.com",
+            messagingSenderId: "664436881411",
+            appId: "1:664436881411:web:ed82941afca95794e93636"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
