@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input placeholder="Firstname">
+    <input placeholder="Lastname">
+    <input type="submit">
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        
+        <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyC-7rHlauMV1DUTfzulWSNAD7PCRwylivc",
+          authDomain: "fir-form-ed9a6.firebaseapp.com",
+          projectId: "fir-form-ed9a6",
+          storageBucket: "fir-form-ed9a6.appspot.com",
+          messagingSenderId: "786935825277",
+          appId: "1:786935825277:web:e30dd66c159b7a9ee78214"
+        };
+      
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+      <script src="index.js"></script>
+</body>
+</html>
