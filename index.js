@@ -26,10 +26,10 @@
                name: `${input1}`,
                phone_number: `${input2}`,
                age: `${input3}`
-        })
-            $container2.innerHTML = '';
+            })
+            $container2.in
             draw();
-    }) 
+    })
 }
 
 
@@ -37,9 +37,6 @@ const draw = () => {
     db.collection('students').get().then((collection) => {
         let length = collection.size;
         for (let i = 1; i <= length; i++) {
-            $container2.classList.add('container')
-
-
             let p1 = document.createElement('p'); 
             let p2 = document.createElement('p'); 
             let p3 = document.createElement('p');
@@ -54,6 +51,3 @@ const draw = () => {
         }
     })
 } 
-
-
-
