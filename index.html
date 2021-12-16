@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>database</title>
+    <title>Todo List</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <div class="container"></div>
+    <h1>Todo List</h1>
+    <div>
+      <input type="text" id="my-input">
+      <button id="add-todo">Нэмэх</button>
+    </div>
+
+    <h2>Not Done Todos</h2>
+    <ul class="todos"></ul>
+
+    <h2>Done todos</h2>
+    <ul class="done-todos"></ul>
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>

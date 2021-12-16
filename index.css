@@ -1,0 +1,53 @@
+.container {
+  border: 1px black solid;
+  width: 100%;
+}
+
+.done {
+    background-color: orchid;
+  border: 1px black solid;
+  width: 100%;
+}
+
+.parent {
+    background-color: palegoldenrod;
+  margin: 0 auto;
+  border: 1px black solid;
+  width: 60%;
+}
+
+.margin {
+    background-color: palegreen;
+  margin: 0 auto;
+  width: 68%;
+  height: 30px;
+  z-index: 0;
+}
+
+.row {
+    background-color: paleturquoise;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+    background-color: purple;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.margin1 {
+  display: none;
+  margin: 0 auto;
+  width: 68%;
+  height: 30px;
+}
