@@ -18,7 +18,7 @@
        const input1 = $input1.value;
        const input2 = $input2.value;
        const input3 = $input3.value;
-       console.log(input1.value);
+       console.log(input1);
 
        db.collection('students').get().then((col) => {
            let length = col.size;
@@ -27,7 +27,7 @@
                phone_number: `${input2}`,
                age: `${input3}`
             })
-            $container2.in
+            $container2.innerHTML = ""
             draw();
     })
 }
